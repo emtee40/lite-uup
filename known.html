@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LightUUP - Browse available builds</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sakura.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/common.js" defer></script>
+        <script src="js/known.js" defer></script>
+    </head>
+    <body>
+        <h1>LightUUP</h1>
+        <p>A simple UUP downloads generator.</p>
+
+        <p>
+            [<a href="/">Home</a>]
+            [<a href="known.html">Downloads</a>]
+            [<a href="https://git.uupdump.net/uup-dump/lightuup">Source code</a>]
+        </p>
+
+        <h2>Browse available builds</h2>
+        <form id="search-builds">
+            <input id="search-builds-query" type="search" placeholder="Search for builds...">
+
+            <label>
+                <input id="search-builds-date-sort" type="checkbox">
+                Sort results by addition date
+            </label>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="search-results" class="hidden">
+            <h3>Search results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date added</th>
+                    </tr>
+                </thead>
+                <tbody id="search-results-table-body"></tbody>
+            </table>
+        </div>
+
+        <div id="status" class="hidden">
+            <h3 id="status-title"></h3>
+            <p id="status-text"></p>
+        </div>
+    </body>
+</html>

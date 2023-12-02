@@ -1,0 +1,16 @@
+#search-builds-query,
+#language-selection-select {
+    width: 100%;
+}
+
+#download-info {
+    margin-bottom: 2rem;
+}
+
+table {
+    text-align: revert;
+}
+
+.hidden {
+    display: none;
+}

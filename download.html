@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LightUUP - Download build</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sakura.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/common.js" defer></script>
+        <script src="js/download.js" defer></script>
+    </head>
+    <body>
+        <h1>LightUUP</h1>
+        <p>A simple UUP downloads generator.</p>
+
+        <p>
+            [<a href="/">Home</a>]
+            [<a href="known.html">Downloads</a>]
+            [<a href="https://git.uupdump.net/uup-dump/lightuup">Source code</a>]
+        </p>
+
+        <h2>Download build</h2>
+        <p id="build-name">Name not yet known.</p>
+        <input id="build-uuid" type="hidden">
+
+        <div id="language-selection" class="hidden">
+            <h3>Select language</h3>
+            <p>Please select your desired language.</p>
+
+            <p><select id="language-selection-select"></select></p>
+        </div>
+
+        <div id="edition-selection" class="hidden">
+            <h3>Select editions</h3>
+            <p>Please select your desired editions.</p>
+            <div id="edition-selection-list"></div>
+        </div>
+
+        <div id="download-info" class="hidden">
+            <h3>Download your selection</h3>
+            <p>You can download your selection by clicking the link below. In case you want to customize some advanced options, such as adding additional editions, please see the <code>ConvertConfig.ini</code> file in the downloaded archive.</p>
+
+            <p><a id="download-link">Create the download package</a></p>
+
+            <p>This download is provided from <a href="https://uupdump.net">UUP dump</a>.</p>
+        </div>
+
+        <div id="status" class="hidden">
+            <h3 id="status-title"></h3>
+            <p id="status-text"></p>
+        </div>
+    </body>
+</html>
